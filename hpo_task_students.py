@@ -93,7 +93,7 @@ if __name__ == '__main__':
         x[2] = 0.0001 * 10 ** (3 * x[2])
         x[3] = 0.001 * 10 ** (3 * x[3])
         x[4] = max(1, int(x[4] * 4096))  # max 2048 hidden units
-        x[5] = max(1, int(x[5] * 20))  # max 20 epochs
+        x[5] = max(1, int(x[5] * 10))  # max 10 epochs
 
         leaky_relu_slope = x[0]
         dropout_p = x[1]
